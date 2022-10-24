@@ -22,7 +22,7 @@ include "./cabecalho.php" ;
                     <div class="col-2"><button type="button" class="btn btn-secondary">Pesquisar</button></div>
                 </div>
             </div>
-        </div>
+    </div>
             <h1>Cadastro de clientes</h1>
 <table class="table table-dark table-hover table-striped">
   <thead>
