@@ -27,6 +27,24 @@
                 </div>
             </div>
     </div>
+    <?php
+        if(isset($_GET['sucesso']) && !empty($_GET['sucesso'])){
+            ?>
+            <div class="alert alert-success">
+                <?php  echo $_GET['sucesso']?> 
+            </div>
+            <?php
+        }
+    ?>
+    <?php
+        if(isset($_GET['erro']) && !empty($_GET['erro'])){
+            ?>
+            <div class="alert alert-danger">
+                <?php  echo $_GET['erro']?> 
+            </div>
+            <?php
+        }
+    ?>
 <table class="table table-dark table-hover table-striped">
     <thead>
         <tr>
@@ -69,11 +87,11 @@
                         ?>
                     </td>
                     <td>
-                        <a class='btn btn-warning' href="./usuariosEdit.php"></a>
+                        <a class='btn btn-warning' href="./usuario-edit.php?id=<?php echo $linha['id']; ?>"></a>
                     </td>
 
                     <td>
-                        <a class='btn btn-danger' href="./usuariosDelete.php"></a>
+                        <a class='btn btn-danger' href="./usuariosDelete.php?id=<?php echo $linha['id'] ?>"></a>
                     </td>
 
                 </tr>
